@@ -4,9 +4,13 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 @Component
+@Entity
 public class JobPost {
-	
+	@Id
 	int jobId;
 	String jobprofile;
 	String jobDescription;
