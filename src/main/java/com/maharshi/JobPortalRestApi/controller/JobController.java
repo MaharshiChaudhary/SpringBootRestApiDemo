@@ -51,6 +51,10 @@ public class JobController {
 		return "Deleted";
 		
 	}
-	
+	@GetMapping("jobpost/search/{keyword}")
+	public List<JobPost> serchByKeyword(@PathVariable("keyword") String keyword) {
+		return service.serchByKeyword(keyword);
+		
+	}
 
 }
